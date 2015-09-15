@@ -1,0 +1,345 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+	<Schema name="funfunfun" id="funfunfun">
+	<SimpleField name="a" type="int"></SimpleField>
+	<SimpleField name="b" type="int"></SimpleField>
+	<SimpleField name="c" type="float">
+	<displayName>bar</displayName>
+	</SimpleField>
+	<SimpleField name="d" type="bool"></SimpleField>
+	<SimpleField name="e" type="string"></SimpleField>
+	</Schema>
+		<name>foo</name>
+		<description><![CDATA[]]></description>
+		<Folder>
+			<name>lala</name>
+			<Placemark>
+				<name>thing1</name>
+				<description><![CDATA[desc]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<ExtendedData>
+				<SchemaData schemaUrl="#funfunfun">
+		      <SimpleData name="a">1</SimpleData>
+		      <SimpleData name="b">10</SimpleData>
+		      <SimpleData name="c">3.14159</SimpleData>
+					<SimpleData name="d">true</SimpleData>
+					<SimpleData name="e">hello</SimpleData>
+		    </SchemaData>
+				</ExtendedData>
+				  <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-96.793459,33.150842 -96.793441,33.150811 -96.793423,33.150779 -96.793408,33.150753 -96.793386,33.150717 -96.793367,33.150686 -96.793367,33.150686 -96.79517,33.150678 -96.795138,33.15069 -96.795105,33.150702 -96.795073,33.150713 -96.79504,33.150724 -96.795007,33.150734 -96.794973,33.150744 -96.79494,33.150753 -96.794906,33.150762 -96.794872,33.150771 -96.794838,33.150779 -96.794804,33.150786 -96.794769,33.150794 -96.794735,33.1508 -96.7947,33.150806 -96.794666,33.150812 -96.794631,33.150817 -96.794596,33.150822 -96.794561,33.150826 -96.794526,33.15083 -96.794493,33.150833 -96.794491,33.150834 -96.794458,33.150836 -96.794455,33.150836 -96.79442,33.150839 -96.794418,33.150839 -96.794385,33.150841 -96.79435,33.150842 -96.794314,33.150843 -96.794279,33.150844 -96.793944,33.150828 -96.793887,33.150831 -96.793847,33.150837 -96.793807,33.150843 -96.793768,33.150849 -96.793728,33.150856 -96.793689,33.150863 -96.793649,33.150871 -96.79361,33.150879 -96.793571,33.150887 -96.793532,33.150896 -96.793493,33.150906 -96.793476,33.150874 -96.793459,33.150842</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+			</Placemark>
+			<Placemark>
+				<name>thing1</name>
+				<description><![CDATA[desc]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<ExtendedData>
+				<Data name="z">
+				<displayName>foo</displayName>
+				<value>desc</value>
+				</Data>
+				<SchemaData schemaUrl="#funfunfun">
+		      <SimpleData name="b">2</SimpleData>
+		      <SimpleData name="c">3.4</SimpleData>
+					<SimpleData name="d">1</SimpleData>
+					<SimpleData name="e">hello</SimpleData>
+		    </SchemaData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-72.1664429,42.5105771,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Line 2</name>
+				<styleUrl>#line-000000-1-nodesc</styleUrl>
+				<ExtendedData>
+				<SchemaData schemaUrl="#funfunfun">
+		      <SimpleData name="b">3</SimpleData>
+		      <SimpleData name="c">3.4</SimpleData>
+					<SimpleData name="d">1</SimpleData>
+					<SimpleData name="e">hello</SimpleData>
+		    </SchemaData>
+				</ExtendedData>
+				<LineString>
+					<tessellate>1</tessellate>
+					<coordinates>-71.6775513,42.500453,0.0 -71.7132568,42.2752766,0.0 -72.6333618,42.1267474,0.0 -72.6498413,42.3118465,0.0 -72.8942871,42.4477814,0.0 -73.059082,42.3463653,0.0 -73.1826782,42.3443353,0.0</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>Line 2</name>
+				<styleUrl>#line-000000-1-nodesc</styleUrl>
+				<ExtendedData>
+				<SchemaData schemaUrl="#funfunfun">
+		      <SimpleData name="b">9</SimpleData>
+		      <SimpleData name="c">3.4</SimpleData>
+					<SimpleData name="d">1</SimpleData>
+					<SimpleData name="e">hello</SimpleData>
+		    </SchemaData>
+				</ExtendedData>
+				<MultiGeometry>
+				<LineString>
+					<tessellate>1</tessellate>
+					<coordinates>-71.6775513,42.500453,0.0 -71.7132568,42.2752766,0.0 -72.6333618,42.1267474,0.0 -72.6498413,42.3118465,0.0 -72.8942871,42.4477814,0.0
+					</coordinates>
+				</LineString>
+				<LineString>
+					<tessellate>1</tessellate>
+					<coordinates>
+				-73.059082,42.3463653,0.0 -73.1826782,42.3443353,0.0</coordinates>
+				</LineString>
+				</MultiGeometry>
+			</Placemark>
+			<Placemark>
+				<name>Polygon 3</name>
+				<styleUrl>#poly-000000-1-76-nodesc</styleUrl>
+				<ExtendedData>
+				<SchemaData schemaUrl="#funfunfun">
+		      <SimpleData name="a">9</SimpleData>
+		      <SimpleData name="b">10</SimpleData>
+		      <SimpleData name="c">3.14159</SimpleData>
+					<SimpleData name="d">false</SimpleData>
+					<SimpleData name="e">hello</SimpleData>
+		    </SchemaData>
+				</ExtendedData>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>-71.9110107,42.7328917,0.0 -72.1252441,42.7933852,0.0 -72.3504639,42.7308743,0.0 -72.1829224,42.6076847,0.0 -71.71875,42.6036416,0.0 -71.1749268,42.710696,0.0 -71.4605713,42.8759641,0.0 -71.9110107,42.7328917,0.0</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Polygon 4</name>
+				<styleUrl>#poly-000000-1-76-nodesc</styleUrl>
+				<ExtendedData>
+				<SchemaData schemaUrl="#funfunfun">
+		      <SimpleData name="a">9</SimpleData>
+		      <SimpleData name="b">10</SimpleData>
+		      <SimpleData name="c">3.14159</SimpleData>
+					<SimpleData name="d">0</SimpleData>
+					<SimpleData name="e">hello</SimpleData>
+		    </SchemaData>
+				</ExtendedData>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>-73.2623291,42.524748,0.0 -73.0563354,42.5631958,0.0 -72.9272461,42.5672416,0.0 -72.8064462,42.5470311,0.0 -72.756958,42.6400204,0.0 -72.7624512,42.724821500000004,0.0 -72.822876,42.8356955,0.0 -72.9853311,42.5764284,0.0 -73.1112671,42.7812913,0.0 -73.2623291,42.5611729,0.0 -73.2623291,42.524748,0.0</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+					<innerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>-72.8668213,42.6905112,0.0 -72.9217529,42.6036416,0.0 -72.8173828,42.59959820000001,0.0 -72.8146362,42.68041629999999,0.0 -72.8668213,42.6905112,0.0</coordinates>
+					</LinearRing>
+					</innerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Polygon 4</name>
+				<styleUrl>#poly-000000-1-76-nodesc</styleUrl>
+				<ExtendedData>
+				<SchemaData schemaUrl="#funfunfun">
+					<SimpleData name="a">9</SimpleData>
+					<SimpleData name="b">10</SimpleData>
+					<SimpleData name="c">3.14159</SimpleData>
+					<SimpleData name="d">0</SimpleData>
+					<SimpleData name="e">hello</SimpleData>
+				</SchemaData>
+				</ExtendedData>
+				<MultiGeometry>
+				<Point>
+
+							<coordinates>-72.9217529,42.6036416,0.0</coordinates>
+				</Point>
+				<Point>
+
+							<coordinates>-73.2623291,42.524748,0.0 </coordinates>
+				</Point>
+				</MultiGeometry>
+			</Placemark>
+			<Placemark>
+				<name>Polygon 4</name>
+				<styleUrl>#poly-000000-1-76-nodesc</styleUrl>
+				<ExtendedData>
+				<SchemaData schemaUrl="#funfunfun">
+		      <SimpleData name="a">9</SimpleData>
+		      <SimpleData name="b">10</SimpleData>
+		      <SimpleData name="c">3.14159</SimpleData>
+					<SimpleData name="d">0</SimpleData>
+					<SimpleData name="e">hello</SimpleData>
+		    </SchemaData>
+				</ExtendedData>
+				<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>-73.2623291,42.524748,0.0 -73.0563354,42.5631958,0.0 -72.9272461,42.5672416,0.0 -72.8064462,42.5470311,0.0 -72.756958,42.6400204,0.0 -72.7624512,42.724821500000004,0.0 -72.822876,42.8356955,0.0 -72.9853311,42.5764284,0.0 -73.1112671,42.7812913,0.0 -73.2623291,42.5611729,0.0 -73.2623291,42.524748,0.0</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+					<innerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>-72.8668213,42.6905112,0.0 -72.9217529,42.6036416,0.0 -72.8173828,42.59959820000001,0.0 -72.8146362,42.68041629999999,0.0 -72.8668213,42.6905112,0.0</coordinates>
+					</LinearRing>
+					</innerBoundaryIs>
+				</Polygon>
+				<Point>
+
+							<coordinates>-73.2623291,42.524748,0.0 </coordinates>
+				</Point>
+				</MultiGeometry>
+			</Placemark>
+			<Placemark>
+				<name>Polygon 4</name>
+				<styleUrl>#poly-000000-1-76-nodesc</styleUrl>
+				<ExtendedData>
+				<SchemaData schemaUrl="#funfunfun">
+		      <SimpleData name="a">9</SimpleData>
+		      <SimpleData name="b">10</SimpleData>
+		      <SimpleData name="c">3.14159</SimpleData>
+					<SimpleData name="d">0</SimpleData>
+					<SimpleData name="e">hello</SimpleData>
+		    </SchemaData>
+				</ExtendedData>
+				<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>-73.2623291,42.524748,0.0 -73.0563354,42.5631958,0.0 -72.9272461,42.5672416,0.0 -72.8064462,42.5470311,0.0 -72.756958,42.6400204,0.0 -72.7624512,42.724821500000004,0.0 -72.822876,42.8356955,0.0 -72.9853311,42.5764284,0.0 -73.1112671,42.7812913,0.0 -73.2623291,42.5611729,0.0 -73.2623291,42.524748,0.0</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+					<innerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>-72.8668213,42.6905112,0.0 -72.9217529,42.6036416,0.0 -72.8173828,42.59959820000001,0.0 -72.8146362,42.68041629999999,0.0 -72.8668213,42.6905112,0.0</coordinates>
+					</LinearRing>
+					</innerBoundaryIs>
+				</Polygon>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>-73.2623291,42.524748,0.0 -73.0563354,42.5631958,0.0 -72.9272461,42.5672416,0.0 -72.8064462,42.5470311,0.0 -72.756958,42.6400204,0.0 -72.7624512,42.724821500000004,0.0 -72.822876,42.8356955,0.0 -72.9853311,42.5764284,0.0 -73.1112671,42.7812913,0.0 -73.2623291,42.5611729,0.0 -73.2623291,42.524748,0.0</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+					<innerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>-72.8668213,42.6905112,0.0 -72.9217529,42.6036416,0.0 -72.8173828,42.59959820000001,0.0 -72.8146362,42.68041629999999,0.0 -72.8668213,42.6905112,0.0</coordinates>
+					</LinearRing>
+					</innerBoundaryIs>
+				</Polygon>
+				</MultiGeometry>
+			</Placemark>
+		</Folder>
+		<Style id='icon-503-DB4436-normal'>
+			<IconStyle>
+				<color>ff3644DB</color>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+				</Icon>
+				<hotSpot x='16' y='31' xunits='pixels' yunits='insetPixels'>
+				</hotSpot>
+			</IconStyle>
+			<LabelStyle>
+				<scale>0.0</scale>
+			</LabelStyle>
+		</Style>
+		<Style id='icon-503-DB4436-highlight'>
+			<IconStyle>
+				<color>ff3644DB</color>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+				</Icon>
+				<hotSpot x='16' y='31' xunits='pixels' yunits='insetPixels'>
+				</hotSpot>
+			</IconStyle>
+			<LabelStyle>
+				<scale>1.1</scale>
+			</LabelStyle>
+		</Style>
+		<StyleMap id='icon-503-DB4436'>
+			<Pair>
+				<key>normal</key>
+				<styleUrl>#icon-503-DB4436-normal</styleUrl>
+			</Pair>
+			<Pair>
+				<key>highlight</key>
+				<styleUrl>#icon-503-DB4436-highlight</styleUrl>
+			</Pair>
+		</StyleMap>
+		<Style id='line-000000-1-nodesc-normal'>
+			<LineStyle>
+				<color>ff000000</color>
+				<width>1</width>
+			</LineStyle>
+			<BalloonStyle>
+				<text><![CDATA[<h3>$[name]</h3>]]></text>
+			</BalloonStyle>
+		</Style>
+		<Style id='line-000000-1-nodesc-highlight'>
+			<LineStyle>
+				<color>ff000000</color>
+				<width>2.0</width>
+			</LineStyle>
+			<BalloonStyle>
+				<text><![CDATA[<h3>$[name]</h3>]]></text>
+			</BalloonStyle>
+		</Style>
+		<StyleMap id='line-000000-1-nodesc'>
+			<Pair>
+				<key>normal</key>
+				<styleUrl>#line-000000-1-nodesc-normal</styleUrl>
+			</Pair>
+			<Pair>
+				<key>highlight</key>
+				<styleUrl>#line-000000-1-nodesc-highlight</styleUrl>
+			</Pair>
+		</StyleMap>
+		<Style id='poly-000000-1-76-nodesc-normal'>
+			<LineStyle>
+				<color>ff000000</color>
+				<width>1</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>4C000000</color>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
+			<BalloonStyle>
+				<text><![CDATA[<h3>$[name]</h3>]]></text>
+			</BalloonStyle>
+		</Style>
+		<Style id='poly-000000-1-76-nodesc-highlight'>
+			<LineStyle>
+				<color>ff000000</color>
+				<width>2.0</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>4C000000</color>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
+			<BalloonStyle>
+				<text><![CDATA[<h3>$[name]</h3>]]></text>
+			</BalloonStyle>
+		</Style>
+		<StyleMap id='poly-000000-1-76-nodesc'>
+			<Pair>
+				<key>normal</key>
+				<styleUrl>#poly-000000-1-76-nodesc-normal</styleUrl>
+			</Pair>
+			<Pair>
+				<key>highlight</key>
+				<styleUrl>#poly-000000-1-76-nodesc-highlight</styleUrl>
+			</Pair>
+		</StyleMap>
+	</Document>
+</kml>

@@ -1,0 +1,24 @@
+{
+  "name": "kml-stream",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "Calvin W. Metcalf <calvin.metcalf@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "inherits": "^2.0.1",
+    "readable-stream": "^2.0.2",
+    "sax": "^1.1.3"
+  },
+  "devDependencies": {
+    "geojsonhint": "^1.1.0",
+    "tape": "^4.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:calvinmetcalf/kml-stream.git"
+  }
+}
