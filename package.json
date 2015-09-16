@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js && npm run test-bin",
+    "test-bin": "./bin.js < test.kml | geojsonhint"
+  },
+  "bin": {
+    "kml2geojson": "./bin.js"
   },
   "author": "Calvin W. Metcalf <calvin.metcalf@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "inherits": "^2.0.1",
+    "jsonstream3": "^3.0.0",
     "readable-stream": "^2.0.2",
     "sax": "^1.1.3"
   },
