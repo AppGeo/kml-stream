@@ -132,6 +132,9 @@ module.exports = class KmlStream extends Transform {
       let thing
       if (!data.trim()) return
       switch (this.currentTag.name) {
+        case 'styleurl':
+          // ignore
+          return
         case 'simpledata':
           this.handleData(this.currentTag.attributes.name, data)
           return

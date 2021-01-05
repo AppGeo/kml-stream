@@ -60,8 +60,7 @@ test('businesses file is valid geojson', (t) => {
           folder: {
             name: 'Open for Take-Out'
           },
-          name: 'Fiore Fine Foods',
-          styleurl: '#icon-seq2-0-0-0288D1-nodesc'
+          name: 'Fiore Fine Foods'
         },
         geometry: { type: 'Point', coordinates: [ -75.1444634, 39.9383731 ] }
       })
