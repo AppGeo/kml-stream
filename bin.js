@@ -1,6 +1,15 @@
 #!/usr/bin/env node
 
-var jsonstream = require('jsonstream3');
-var Kml = require('./');
+const jsonstream = require('jsonstream-next');
+const { pipeline } = require('stream');
+const Kml = require('./');
 
-process.stdin.pipe(new Kml()).pipe(jsonstream.stringify('{"type": "FeatureCollection", "features":[\n', '\n,\n', "\n]}\n")).pipe(process.stdout);
+const stream = pipeline(
+  process.stdin,
+  new Kml(),
+  jsonstream.stringify('{"type": "FeatureCollection", "features":[\n', '\n,\n', "\n]}\n"),
+  process.stdout,
+  (err) => {
+    if (err) stream.emit('error', err)
+  }
+)
