@@ -1,6 +1,12 @@
 const sax = require('sax')
 const { Transform } = require('stream')
 
+// these tags are not added as properties to a feature when they are a child
+// of a placemark, because they have no utility
+const ignoredPropertyTags = [
+  'styleurl'
+]
+
 module.exports = class KmlStream extends Transform {
   constructor() {
     super({ objectMode: true })
@@ -132,9 +138,6 @@ module.exports = class KmlStream extends Transform {
       let thing
       if (!data.trim()) return
       switch (this.currentTag.name) {
-        case 'styleurl':
-          // ignore
-          return
         case 'simpledata':
           this.handleData(this.currentTag.attributes.name, data)
           return
@@ -168,6 +171,8 @@ module.exports = class KmlStream extends Transform {
           }
           return
       }
+      
+      if (ignoredPropertyTags.includes(this.currentTag.name)) return
 
       // any tag not handled that is a child of placemark or a folder should be added as a property!
       if (this.folder && !this.props) this.folder[this.currentTag.name] = data

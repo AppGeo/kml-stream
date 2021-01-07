@@ -10,6 +10,10 @@ const stream = pipeline(
   jsonstream.stringify('{"type": "FeatureCollection", "features":[\n', '\n,\n', "\n]}\n"),
   process.stdout,
   (err) => {
-    if (err) stream.emit('error', err)
+    if (err) {
+      console.error(err)
+      process.exit(1)
+    }
+    process.exit()
   }
 )
