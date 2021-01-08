@@ -161,17 +161,17 @@ module.exports = class KmlStream extends Transform {
           } else if (this.geoMode === 'outerbounds') {
             thing = parseCoords(data)
             if (thing) {
-              this.geom.coordinates.unshift(thing)
+              this.geom.coordinates.unshift(setWinding(thing))
             }
           } else if (this.geoMode === 'innerbounds') {
             thing = parseCoords(data)
             if (thing) {
-              this.geom.coordinates.push(thing)
+              this.geom.coordinates.push(setWinding(thing, true))
             }
           }
           return
       }
-      
+
       if (ignoredPropertyTags.includes(this.currentTag.name)) return
 
       // any tag not handled that is a child of placemark or a folder should be added as a property!
@@ -333,6 +333,28 @@ const mergeGeoms = (geoms) =>
 
 const mergeCoords = (geoms) =>
   geoms.reduce((a, b) => a.concat(b.coordinates), [])
+
+const rad = (x) => x * Math.PI / 180;
+const sinRad = (x) => Math.sin(rad(x))
+const isClockwise = (ring) => {
+  let total = 0;
+  let i = 0;
+  while (++i < ring.length) {
+    const point = ring[i];
+    const prevPoint = ring[i - 1];
+    total += rad(point[0] - prevPoint[0]) * (2 + sinRad(prevPoint[1]) + sinRad(point[1]));
+  }
+  return total >= 0;
+}
+
+const setWinding = (ring, clockwise) => {
+  const winding = isClockwise(ring);
+  const desiredWinding = Boolean(clockwise);
+  if (winding !== desiredWinding) {
+    ring.reverse();
+  }
+  return ring;
+}
 
 function getMultiType(geoms) {
   let type
